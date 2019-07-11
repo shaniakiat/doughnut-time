@@ -2,8 +2,8 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:800|Roboto&display=swap");
 
 :root {
-  --mainBrown: #845218;
-  --mainYellow: #fcc631;
+  --mainBrown: rgb(132, 82, 24);
+  --mainYellow: rgb(251, 197, 49);
   --mainGrey: #ece8dc;
   --mainWhite: #fff;
   --mainDark: #222;
@@ -33,4 +33,38 @@ h6 {
   cursor: pointer;
   color: var(--mainYellow);
   font-size: 2rem;
+}
+
+.default-background,
+.about-background {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: linear-gradient(rgba(251, 197, 49, 0.5), rgba(132, 82, 24, 0.5));
+  background-position: center;
+  background-size: cover;
+}
+
+.about-background {
+  min-height: 60vh;
+}
+
+.btn-yellow {
+  color: var(--mainYellow) !important;
+  border-color: var(--mainYellow) !important;
+}
+
+.btn-yellow:hover {
+  background: var(--mainYellow);
+  color: var(--mainBrown) !important;
+}
+
+.footer {
+  background: var(--mainBrown);
+}
+
+.copyright {
+  font-size: 15px !important;
+  font-family: "Roboto", sans-serif !important;
 }
