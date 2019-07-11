@@ -1,8 +1,9 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:800&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:800|Roboto&display=swap");
 
 :root {
   --mainBrown: #845218;
-  --mainYellow: #d7c197;
+  --mainYellow: #fcc631;
   --mainGrey: #ece8dc;
   --mainWhite: #fff;
   --mainDark: #222;
@@ -11,5 +12,25 @@
 body {
   background: var(--mainWhite);
   color: var(--mainDark);
+  font-family: "Roboto", sans-serif !important;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
   font-family: "Poppins", sans-serif !important;
+  /* letter-spacing: 0.1rem !important; */
+}
+
+.text-yellow {
+  color: var(--mainYellow);
+}
+
+.cart-icon {
+  cursor: pointer;
+  color: var(--mainYellow);
+  font-size: 2rem;
 }
