@@ -18,9 +18,7 @@ export default function Info() {
               veritatis quas iure autem. Vitae, iure?
             </p>
             <Link to="/about/">
-              <button className="btn text-uppercase btn-yellow">
-                about page
-              </button>
+              <button className="btn text-uppercase">about page</button>
             </Link>
           </div>
         </div>

@@ -2,16 +2,16 @@
 @import url("https://fonts.googleapis.com/css?family=Poppins:800|Roboto&display=swap");
 
 :root {
-  --mainBrown: rgb(132, 82, 24);
-  --mainYellow: rgb(251, 197, 49);
+  --mainPink: rgb(221, 129, 145);
+  --mainBlue: rgb(92, 202, 230);
   --mainGrey: #ece8dc;
   --mainWhite: #fff;
-  --mainDark: #222;
+  --mainDarkPink: rgb(129, 53, 66);
 }
 
 body {
   background: var(--mainWhite);
-  color: var(--mainDark);
+  color: var(--mainDarkPink);
   font-family: "Roboto", sans-serif !important;
 }
 
@@ -25,13 +25,18 @@ h6 {
   /* letter-spacing: 0.1rem !important; */
 }
 
-.text-yellow {
-  color: var(--mainYellow);
+.text-blue {
+  color: var(--mainBlue);
+}
+
+.text-white {
+  background: rgb(221, 129, 145);
+  padding: 30px;
 }
 
 .cart-icon {
   cursor: pointer;
-  color: var(--mainYellow);
+  color: var(--mainBlue);
   font-size: 2rem;
 }
 
@@ -50,18 +55,18 @@ h6 {
   min-height: 60vh;
 }
 
-.btn-yellow {
-  color: var(--mainYellow) !important;
-  border-color: var(--mainYellow) !important;
+.btn {
+  color: var(--mainBlue) !important;
+  border-color: var(--mainBlue) !important;
 }
 
-.btn-yellow:hover {
-  background: var(--mainYellow);
-  color: var(--mainBrown) !important;
+.btn:hover {
+  background: var(--mainBlue);
+  color: var(--mainDarkPink) !important;
 }
 
 .footer {
-  background: var(--mainBrown);
+  background: var(--mainPink);
 }
 
 .copyright {

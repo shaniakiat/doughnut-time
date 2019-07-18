@@ -1,7 +1,7 @@
 module.exports = {
   siteMetadata: {
-    title: `Coffee Time`,
-    description: `Kick off your next, great Gatsby project with this default starter. This barebones starter ships with the main Gatsby configuration files you might need.`,
+    title: `Shania Kiat`,
+    description: `Shania Kiat is an undergraduate student in La Salle University, PA majoring in mathematics and computer science.`,
     author: `@gatsbyjs`,
   },
   plugins: [
