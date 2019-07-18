@@ -25,6 +25,11 @@ h6 {
   /* letter-spacing: 0.1rem !important; */
 }
 
+.lead {
+  color: var(--mainDarkPink);
+  font-family: "Roboto", sans-serif !important;
+}
+
 .text-blue {
   color: var(--mainBlue);
 }
@@ -55,13 +60,19 @@ h6 {
   min-height: 60vh;
 }
 
+.btn,
+.btn:after,
+.btn:before {
+  transition: 0.5s;
+}
+
 .btn {
-  color: var(--mainBlue) !important;
-  border-color: var(--mainBlue) !important;
+  color: var(--mainPink) !important;
+  border-color: var(--mainPink) !important;
 }
 
 .btn:hover {
-  background: var(--mainBlue);
+  background: var(--mainPink);
   color: var(--mainDarkPink) !important;
 }
 
@@ -72,4 +83,15 @@ h6 {
 .copyright {
   font-size: 15px !important;
   font-family: "Roboto", sans-serif !important;
+}
+
+@media only screen and (max-width: 768px) {
+  .text-white {
+    font-size: 3rem;
+    background: rgb(221, 129, 145);
+    padding: 30px;
+  }
+  .lead {
+    font-size: 1rem;
+  }
 }
