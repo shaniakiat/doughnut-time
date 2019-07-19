@@ -6,6 +6,8 @@ import SEO from "../components/seo"
 import BackgroundSection from "../components/Globals/BackgroundSection"
 import Info from "../components/Home/Info"
 import Menu from "../components/Home/Menu"
+import Products from "../components/Home/Products"
+import Contact from "../components/Home/Contact"
 
 const IndexPage = ({ data }) => (
   <Layout>
@@ -16,6 +18,8 @@ const IndexPage = ({ data }) => (
     />
     <Info />
     <Menu items={data.menu} />
+    <Products />
+    <Contact />
   </Layout>
 )
 
@@ -41,6 +45,20 @@ export const query = graphql`
           image {
             fixed(width: 50, height: 50) {
               ...GatsbyContentfulFixed_tracedSVG
+            }
+          }
+        }
+      }
+    }
+    products: allContentfulProduct {
+      edges {
+        node {
+          id
+          title
+          price
+          image {
+            fluid(maxHeight: 426) {
+              ...GatsbyContentfulFluid_tracedSVG
             }
           }
         }
