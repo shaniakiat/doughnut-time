@@ -34,9 +34,22 @@ h6 {
   color: var(--mainBlue);
 }
 
-.text-white {
+.text-pink {
   background: rgb(221, 129, 145);
+  color: #fff;
   padding: 30px;
+}
+
+.menu {
+  background: rgba(245, 209, 198, 0.842);
+}
+
+.menu-title {
+  letter-spacing: 1px;
+}
+
+.text-pink-price {
+  color: rgb(221, 129, 145);
 }
 
 .cart-icon {
@@ -86,9 +99,8 @@ h6 {
 }
 
 @media only screen and (max-width: 768px) {
-  .text-white {
+  .text-pink {
     font-size: 3rem;
-    background: rgb(221, 129, 145);
     padding: 30px;
   }
   .lead {
