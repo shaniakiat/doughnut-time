@@ -3,7 +3,7 @@ require("dotenv").config({
 })
 module.exports = {
   siteMetadata: {
-    title: `Shania Kiat`,
+    title: `Doughnut Time`,
     description: `Shania Kiat is an undergraduate student in La Salle University, PA majoring in mathematics and computer science.`,
     author: `@gatsbyjs`,
   },
@@ -22,6 +22,13 @@ module.exports = {
         spaceId: process.env.CONTENTFUL_SPACE_ID,
         // Learn about environment variables: https://gatsby.dev/env-vars
         accessToken: process.env.CONTENTFUL_ACCESS_TOKEN,
+      },
+    },
+    {
+      resolve: "gatsby-plugin-snipcart",
+      options: {
+        apiKey: process.env.SNIPCART_API,
+        autopop: true,
       },
     },
     `gatsby-transformer-sharp`,
