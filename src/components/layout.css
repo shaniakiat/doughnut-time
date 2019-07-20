@@ -1,5 +1,4 @@
-@import url("https://fonts.googleapis.com/css?family=Poppins:800&display=swap");
-@import url("https://fonts.googleapis.com/css?family=Poppins:800|Roboto&display=swap");
+@import url("https://fonts.googleapis.com/css?family=Poppins:800|Roboto:400&display=swap");
 
 :root {
   --mainPink: rgb(221, 129, 145);
@@ -40,7 +39,8 @@ h6 {
   padding: 30px;
 }
 
-.menu {
+.menu,
+.contact {
   background: rgba(245, 209, 198, 0.842);
 }
 
@@ -50,6 +50,33 @@ h6 {
 
 .text-pink-price {
   color: rgb(221, 129, 145);
+}
+.navbar-light .navbar-nav .nav-link,
+.navbar-light .navbar-nav .nav-link:after,
+.navbar-light .navbar-nav .nav-link:before {
+  transition: 0.5s;
+}
+
+.cart-icon,
+.cart-icon:after,
+.cart-icon:before {
+  transition: 0.5s;
+}
+
+.navbar-light .navbar-nav .nav-link,
+.cart-icon {
+  padding: 0 2rem important!;
+  font-family: "Poppins", sans-serif !important;
+  color: var(--mainDarkPink) !important;
+}
+
+.navbar-light .navbar-nav .nav-link:hover,
+.cart-icon:hover {
+  color: var(--mainPink) !important;
+}
+
+.cart {
+  margin: 0 0.5rem !important;
 }
 
 .cart-icon {
@@ -80,12 +107,19 @@ h6 {
 }
 
 .btn {
-  color: var(--mainPink) !important;
-  border-color: var(--mainPink) !important;
+  padding: 5px 20px;
+  letter-spacing: 1.5px;
+  font-family: "Poppins", sans-serif !important;
+  font-size: 13px;
+  background: var(--mainDarkPink);
+  color: #fff !important;
+  border-color: var(--mainDarkPink) !important;
+  border-radius: 20px;
 }
 
 .btn:hover {
   background: var(--mainPink);
+  border-color: var(--mainPink) !important;
   color: var(--mainDarkPink) !important;
 }
 
