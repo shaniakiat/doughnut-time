@@ -114,7 +114,7 @@ h6 {
   background: var(--mainDarkPink);
   color: #fff !important;
   border-color: var(--mainDarkPink) !important;
-  border-radius: 20px;
+  border-radius: 22px;
 }
 
 .btn:hover {
