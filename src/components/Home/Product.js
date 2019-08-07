@@ -10,7 +10,7 @@ export default function Product({ product }) {
           <h6>{product.title}</h6>
           <h6>${product.price}</h6>
           <button
-            className="btn mt-3 text-uppercase snipcart-add-item"
+            className="btn mt-3 snipcart-add-item"
             data-item-id={product.id}
             data-item-name={product.title}
             data-item-price={product.price}

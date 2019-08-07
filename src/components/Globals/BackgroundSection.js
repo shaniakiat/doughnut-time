@@ -9,9 +9,10 @@ export default function BackgroundSection({
 }) {
   return (
     <BackgroundImage className={styleClass} fluid={img}>
-      <h1 className="title text-pink text-uppercase text-center display-2 font-weight-bold">
-        {title}
-      </h1>
+      <div className="container">
+        <h1 className="title display-1 font-weight-bold">doughnut</h1>
+        <h1 className="title display-1 font-weight-bold">time</h1>
+      </div>
     </BackgroundImage>
   )
 }

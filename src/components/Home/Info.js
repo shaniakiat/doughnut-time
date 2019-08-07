@@ -6,10 +6,10 @@ export default function Info() {
   return (
     <section className="info py-5">
       <div className="container">
-        <Title title="our story"></Title>
+        <h1 className="story">our story</h1>
         <div className="row">
-          <div className="col-10 col-sm-10 mx-auto text-center">
-            <p className="lead mb-5">
+          <div className="col-10 col-sm-10">
+            <p className="lead mb-5 text-left">
               Donut sweet cookie cake biscuit pastry ipsum apple vanilla
               sprinkles cake apple sweet pastry sweet cookie marzipan apple
               cream jelly. Cookie donut cookie candy sprinkles dolor sweet
@@ -22,7 +22,7 @@ export default function Info() {
               jelly biscuit lollipop muffin.
             </p>
             <Link to="/about/">
-              <button className="btn text-uppercase">about page</button>
+              <button className="btn">about page</button>
             </Link>
           </div>
         </div>
